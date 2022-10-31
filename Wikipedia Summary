@@ -1,0 +1,7 @@
+import wikipedia
+wikipedia.set_lang("pt")
+
+tema = input("Digite o tema do Resumo:")
+quat_linhas = int(input("Quantidade de linhas do seu resumo:"))
+
+print (wikipedia.summary({tema}, sentences = {quat_linhas}))

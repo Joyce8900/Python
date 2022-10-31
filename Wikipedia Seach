@@ -1,0 +1,10 @@
+import wikipedia
+wikipedia.set_lang("pt")
+
+pesquisa = input("Digite o titulo da sua pesquisa:")
+print (wikipedia.search({pesquisa}, results = 4))
+
+tema = input("Digite o tema do Resumo:")
+quat_linhas = int(input("Quantidade de linhas do seu resumo:"))
+
+print (wikipedia.summary({tema}, sentences = {quat_linhas}))
